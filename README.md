@@ -27,8 +27,8 @@ Needs a GPU and a window (not a headless CI box).
 
 ## What you are looking at
 
-- **Sun / Earth / Moon / Mars** — spheres. Earth and Mars spin from `satellite-datetime` sidereal / MTC hours.
-- **HUD** — same `Instant` projected to TAI, TT, UTC (RFC 3339), POSIX vs SI elapsed, GPS week, Mars MSD/MTC, TCL/LTC, lunar surface offset, CCSDS CUC.
+- **Left column** — same `Instant` grouped for reading: Earth civil, POSIX vs SI, TAI/TT/TCG, GPS, Mars/Moon, CCSDS CUC.
+- **Right viewport** — Sun / Earth / Moon / Mars. Earth and Mars spin from `satellite-datetime` sidereal / MTC hours. Not SPICE.
 
 The library has no `now()`. This app injects time from the OS (or from a jump), then calls crate APIs every frame.
 
